@@ -1,0 +1,16 @@
+{
+  "name": "angular-api-server",
+  "version": "1.0.0",
+  "description": "API Server for use with App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+
+  "author": "Aaron Skudder",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3"
+  }
+}

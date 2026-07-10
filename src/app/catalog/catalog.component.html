@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="filters">
+    <a class="button" (click)="filter = 'HP'">HP</a>
+    <a class="button" (click)="filter = 'Lenovo'">Lenovo</a> 
+    <a class="button" (click)="filter = 'Samsung'">Samsung</a>
+    <a class="button" (click)="filter = 'Acer'">Acer</a>
+    <a class="button" (click)="filter = ''">All</a>
+  </div>
+
+   <ul class="products">
+    <li class="product-item" *ngFor="let product of getFilteredProducts()">
+      <bot-product-details [product]="product" (buy)="addToCart(product)"></bot-product-details>
+    </li>
+  </ul>
+</div>

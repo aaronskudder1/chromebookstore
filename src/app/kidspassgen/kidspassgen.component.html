@@ -1,0 +1,17 @@
+<div class="kidspassgen">
+  <h2>Kid-Safe Passphrase Generator</h2>
+  <button type="button" (click)="generatePassphrase()">Generate Passphrase</button>
+
+  <div *ngIf="generatedPassphrase" class="passphrase-result">
+    <p><strong>{{ generatedPassphrase }}</strong></p>
+    <button type="button" (click)="copyPassphrase()">Copy</button>
+  </div>
+
+  <h2>Password Generator</h2>
+  <button type="button" (click)="generatePassword()">Generate Password</button>
+
+  <div *ngIf="generatedPassword" class="passphrase-result">
+    <p><strong>{{ generatedPassword }}</strong></p>
+    <button type="button" (click)="copyPassword()">Copy</button>
+  </div>
+</div>

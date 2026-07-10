@@ -1,0 +1,25 @@
+<div class="getfile">
+  <h2>CSV Concatenation Loader</h2>
+  <p>Loads test.csv and test1.csv, then concatenates them.</p>
+  <button type="button" (click)="loadAndConcatenateCsv()">Reload CSV Files</button>
+
+  <div *ngIf="csvData.length; else noData">
+    <p><strong>Total rows: {{ csvData.length }}</strong></p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th *ngFor="let header of csvHeaders">{{ header }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of csvData">
+          <td *ngFor="let header of csvHeaders">{{ row[header] }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ng-template #noData>
+    <p>No CSV data loaded yet.</p>
+  </ng-template>
+</div>

@@ -16,6 +16,7 @@ export class ProductDetailsComponent {
   }
 
   buyButtonClicked(product: IProduct) {
+    product.name += ' (Added to Cart)';
     this.buy.emit();
   }
 }

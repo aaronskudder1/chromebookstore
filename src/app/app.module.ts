@@ -12,7 +12,6 @@ import { CartComponent } from './cart/cart.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UserModule } from './user/user.module';
 import { KidspassgenComponent } from './kidspassgen/kidspassgen.component';
-import { GetfileComponent } from './getfile/getfile.component';
 
 
 @NgModule({
@@ -24,7 +23,6 @@ import { GetfileComponent } from './getfile/getfile.component';
     ProductDetailsComponent,
     CartComponent,
     KidspassgenComponent,
-    GetfileComponent,
 
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule, UserModule],

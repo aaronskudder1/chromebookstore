@@ -22,6 +22,11 @@
   font-size: 22px;
   font-weight: bold;
 }
+.stock .name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 
 .product .description {
   margin-top: 3px;

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "joes-robot-shop": {
+    "chromebookstore": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/joes-robot-shop",
+            "outputPath": "dist/chromebookstore",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,11 +61,11 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "joes-robot-shop:build:production",
+              "browserTarget": "chromebookstore:build:production",
               "proxyConfig": "src/proxy.conf.json"
             },
             "development": {
-              "browserTarget": "joes-robot-shop:build:development",
+              "browserTarget": "chromebookstore:build:development",
               "proxyConfig": "src/proxy.conf.json"
 
             }
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "joes-robot-shop:build"
+            "browserTarget": "chromebookstore:build"
           }
         },
         "test": {

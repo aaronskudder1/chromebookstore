@@ -12,16 +12,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'joes-robot-shop'`, () => {
+  it(`should have as title 'chromebookstore'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('joes-robot-shop');
+    expect(app.title).toEqual('chromebookstore');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('joes-robot-shop app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('chromebookstore app is running!');
   });
 });

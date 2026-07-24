@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./catalog.component.css'],
 })
 export class CatalogComponent {
-  products: any;
+  products: IProduct[] = [];
   filter: string = '';
 
   constructor(
@@ -21,9 +21,10 @@ export class CatalogComponent {
   ) { }
 
   ngOnInit() {
-    this.productSvc.getProducts().subscribe((products) => {
-      this.products = products;
-    });
+    this.products = this.productSvc.products;
+    //  this.productSvc.getProducts().subscribe((products) => {
+  //    this.products = products;
+  //  });
     this.route.queryParams.subscribe((params) => {
       this.filter = params['filter'] ?? '';
     })

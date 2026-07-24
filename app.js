@@ -1,27 +1,18 @@
+//import express from 'express';
 const express = require("express");
-const bodyParser = require("body-parser");
-
+const bodyParser = require("body-parser"); 
 const app = express();
+import db from './connection.js';
+
 app.use(bodyParser.json());
-/* 
-  IMPORTANT:
-    ***NEVER*** store credentials unencrypted like this.
-    This is for demo purposes only in order to simulate a functioning API serverr.
-*/
-const users = {
-  "aaron@skudder.nz": {
-    firstName: "Aaron",
-    lastName: "Skudder",
-    email: "aaron@skudder.nz",
-    password: "a",
-  },
-  "joe@joesrobotshop.com": {
-    firstName: "user",
-    lastName: "person",
-    email: "user@person.com",
-    password: "super-secret",
-  },
-};
+
+// Find all
+app.get('/api/products', async (req,res) => {
+  console.log(await db.collection('products').find({}).limit(10).toArray());
+  res.send('Mongo db files found');
+});
+
+
 let cart = [];
 
 // use this to add a 1 second delay to all requests
@@ -29,7 +20,7 @@ let cart = [];
 //   setTimeout(next, 1000);
 // });
 
-app.get("/api/products", (req, res) => {
+/* app.get("/api/products", (req, res) => {
   let products = [
         {
         id: 1,
@@ -142,6 +133,7 @@ app.get("/api/products", (req, res) => {
   ];
   res.send(products);
 });
+*/
 
 app.post("/api/cart", (req, res) => {
   cart = req.body;
@@ -171,6 +163,21 @@ app.post("/api/register", (req, res) =>
     practices. In a production application user credentials would be cryptographically 
     stored in a database server and the password should NEVER be stored as plain text. 
 */
+const users = {
+  "aaron@skudder.nz": {
+    firstName: "Aaron",
+    lastName: "Skudder",
+    email: "aaron@skudder.nz",
+    password: "a",
+  },
+  "joe@joesrobotshop.com": {
+    firstName: "user",
+    lastName: "person",
+    email: "user@person.com",
+    password: "super-secret",
+  },
+};
+
 app.post("/api/sign-in", (req, res) => {
   const user = users[req.body.email];
   if (user && user.password === req.body.password) {

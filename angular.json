@@ -62,11 +62,11 @@
           "configurations": {
             "production": {
               "browserTarget": "chromebookstore:build:production",
-              "proxyConfig": "src/proxy.conf.json"
+
             },
             "development": {
               "browserTarget": "chromebookstore:build:development",
-              "proxyConfig": "src/proxy.conf.json"
+
 
             }
           },

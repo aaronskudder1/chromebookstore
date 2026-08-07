@@ -6,7 +6,7 @@
       <div class="description">{{ product.description }}</div>
       <div class="stock" [ngClass]="{ 'in-stock': product.stock > 0, 'out-of-stock': product.stock === 0 }">
         {{ product.stock > 0 ? 'In Stock' : 'Out of Stock' }}
-        {{ product.stock > 0 ? 'Stock: ' + product.stock : '' }}
+        {{ product.stock > 0 ? 'Available: ' + product.stock : '' }}
 
       </div>
       <div class="category">Part Type: {{ product.category }}</div>

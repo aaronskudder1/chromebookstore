@@ -22,6 +22,10 @@
           <div *ngIf="product.discount > 0" class="discount">
             {{ product.price * (1 - product.discount) | currency : "USD" }}
           </div>
+          <div>
+            <p>To order: Email info@skudder.nz</p>
+          </div>
+
           <button (click)="removeFromCart(product)">Remove</button>
         </div>
       </div>

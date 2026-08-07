@@ -83,7 +83,7 @@ export const Products: IProduct[] = [
         name: "Acer C733",
         imageName: "AcerC733.png",
         category: "Acer",
-        price: 90,
+        price: 80,
         discount: 0,
         stock:2,
       },

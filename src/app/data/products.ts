@@ -20,7 +20,7 @@ export const Products: IProduct[] = [
         category: "HP",
         price: 100,
         discount: 0.2,
-        stock:0,
+        stock:1,
       },
         {
         id: 3,
@@ -31,7 +31,7 @@ export const Products: IProduct[] = [
         category: "HP",
         price: 80.0,
         discount: 0.2,
-          stock:4,
+          stock:2,
       },
       {
         id: 3,
@@ -53,7 +53,7 @@ export const Products: IProduct[] = [
         category: "HP",
         price: 60.0,
         discount: 0.2,
-          stock:13,
+          stock:12,
       },
       {
         id: 5,
@@ -75,7 +75,7 @@ export const Products: IProduct[] = [
         category: "Samsung",
         price: 90,
         discount: 0.1,
-        stock:1,
+        stock:0,
       },
       {
         id: 7,
@@ -85,7 +85,7 @@ export const Products: IProduct[] = [
         category: "Acer",
         price: 90,
         discount: 0,
-        stock:1,
+        stock:2,
       },
       {
         id: 8,
@@ -106,7 +106,7 @@ export const Products: IProduct[] = [
         category: "Acer",
         price: 50.0,
         discount: 0,
-        stock:1,
+        stock:0,
       },
       {
         id: 10,
@@ -128,6 +128,6 @@ export const Products: IProduct[] = [
         category: "HP",
         price: 40.0,
         discount: 0,
-        stock:2,
+        stock:8,
       }
   ];

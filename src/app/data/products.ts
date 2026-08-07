@@ -52,7 +52,7 @@ export const Products: IProduct[] = [
         imageName: "HpG5.png",
         category: "HP",
         price: 60.0,
-        discount: 0.2,
+        discount: 0,
           stock:12,
       },
       {

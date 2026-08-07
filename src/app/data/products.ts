@@ -8,7 +8,7 @@ export const Products: IProduct[] = [
         imageName: "Lenovo300e.png",
         category: "Lenovo",
         price: 100,
-        discount: 0,
+        discount: 0.1,
         stock:2,
       },
    {
@@ -19,7 +19,7 @@ export const Products: IProduct[] = [
         imageName: "HPG8-11in.png",
         category: "HP",
         price: 100,
-        discount: 0.2,
+        discount: 0.1,
         stock:1,
       },
         {
@@ -30,7 +30,7 @@ export const Products: IProduct[] = [
         imageName: "HpG7.png",
         category: "HP",
         price: 80.0,
-        discount: 0.2,
+        discount: 0.05,
           stock:2,
       },
       {
@@ -41,7 +41,7 @@ export const Products: IProduct[] = [
         imageName: "hpChromebookG6.png",
         category: "HP",
         price: 70.0,
-        discount: 0.2,
+        discount: 0,
           stock:6,
       },
            {
